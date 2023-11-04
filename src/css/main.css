@@ -19,6 +19,35 @@
   color: #fff;
   font-weight: 300;
 }
+.ft-widget h5 {
+  color: #393737;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.ft-widget {
+  text-align: center;
+  margin: 20px;
+}
+.splide__pagination__page {
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .splide__pagination__page {
+    margin: 15px 8px;
+  }
+}
+.splide__pagination__page.is-active {
+  background: #1d4f32;
+  transform: scale(1);
+  z-index: 1;
+}
 /* preloader css start */
 .lds-ellipsis {
   display: inline-block;

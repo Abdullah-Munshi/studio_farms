@@ -21,9 +21,13 @@ module.exports = {
       fontFamily: {
         montserrat: "'Montserrat', sans-serif;",
         raleway: "'Raleway', sans-serif",
+        sacramento: "'Sacramento', cursive",
       },
       backgroundColor: {
         green: "#1D4F32",
+      },
+      lineHeight: {
+        snug: 1.25,
       },
     },
   },
