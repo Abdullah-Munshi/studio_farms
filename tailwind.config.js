@@ -21,6 +21,7 @@ module.exports = {
         montserrat: "'Montserrat', sans-serif;",
         raleway: "'Raleway', sans-serif",
         sacramento: "'Sacramento', cursive",
+        satisfy: "'Satisfy', cursive",
       },
       backgroundColor: {
         green: "#1D4F32",
