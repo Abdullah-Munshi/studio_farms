@@ -165,13 +165,45 @@
   box-shadow: -2px 7px 26px 1px rgba(0, 0, 0, 0.25);
   padding: 85px;
 }
+.location-area .cmn-content {
+  max-width: 550px;
+}
+.location-wrapper {
+  display: grid;
+  grid-template-columns: auto 330px;
+  grid-gap: 30px;
+  align-items: flex-end;
+}
+.location-map {
+  margin-top: -175px;
+  margin-left: auto;
+}
+.professional-area {
+  padding-bottom: 70px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 1300px) {
+  .location-area .cmn-content {
+    max-width: 430px;
+  }
+}
 @media screen and (max-width: 1279px) {
   .main-menu li:not(:first-child),
   .ft-menu li:not(:first-child) {
     margin-left: 50px;
   }
+  .location-area .cmn-content {
+    max-width: 100%;
+  }
+  .location-map {
+    margin-top: 40px;
+    margin-left: auto;
+  }
 }
 @media screen and (max-width: 1023px) {
+  .location-wrapper {
+    grid-template-columns: auto 230px;
+  }
   .main-menu li a {
     font-size: 16px;
     color: #1d4f32;
@@ -209,6 +241,26 @@
 }
 
 @media screen and (max-width: 767px) {
+  .location-wrapper {
+    display: block;
+  }
+  .farmland-img img {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .professional-area {
+    padding-bottom: 45px;
+    padding-top: 0;
+  }
+  .location-map {
+    margin-bottom: 45px;
+  }
+  .location-map img {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .dr-item {
     padding: 20px 16px;
     min-width: 145px;
