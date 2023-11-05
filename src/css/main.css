@@ -28,7 +28,7 @@
 .ft-widget h5 {
   color: #393737;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
@@ -131,14 +131,12 @@
   }
 }
 @media screen and (max-width: 1023px) {
-  .main-menu li a,
-  .ft-menu li a {
+  .main-menu li a {
     font-size: 16px;
     color: #1d4f32;
     font-weight: 500;
   }
-  .main-menu li:not(:first-child),
-  .ft-menu li:not(:first-child) {
+  .main-menu li:not(:first-child) {
     margin-left: 0;
     margin-top: 10px;
   }
@@ -160,5 +158,27 @@
   .overlay.show {
     opacity: 1;
     visibility: visible;
+  }
+  .ft-widget {
+    margin: 20px 15px;
+  }
+  .ft-menu li:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ft-widget h5 {
+    margin-bottom: 5px;
+  }
+  .ft-widget {
+    margin: 24px 0;
+  }
+  .ft-menu li a {
+    font-size: 16px;
+  }
+  .ft-menu li:not(:first-child) {
+    margin-left: 0;
+    margin-top: 15px;
   }
 }
