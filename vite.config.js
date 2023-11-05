@@ -5,6 +5,7 @@ export default {
       input: {
         main: resolve(__dirname, "index.html"),
         disclaimer: resolve(__dirname, "disclaimer.html"),
+        whyus: resolve(__dirname, "whyus.html"),
       },
       output: {
         chunkFileNames: "js/[name]-[hash].js",
