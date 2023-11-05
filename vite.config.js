@@ -4,6 +4,7 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
+        disclaimer: resolve(__dirname, "disclaimer.html"),
       },
       output: {
         chunkFileNames: "js/[name]-[hash].js",
@@ -25,5 +26,5 @@ export default {
     },
   },
   // base: "/media_prospect", github hosting purpose
-  base: './'
+  base: "./",
 };

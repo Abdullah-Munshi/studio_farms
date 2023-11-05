@@ -124,6 +124,15 @@
   opacity: 0;
   visibility: hidden;
 }
+.cmn-content p {
+  font-size: 18px;
+}
+.para p:not(:last-child) {
+  margin-bottom: 24px;
+}
+.cmn-content .para:not(:last-child) {
+  margin-bottom: 24px;
+}
 @media screen and (max-width: 1279px) {
   .main-menu li:not(:first-child),
   .ft-menu li:not(:first-child) {
@@ -168,6 +177,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .cmn-content p {
+    font-size: 16px;
+  }
+  .para p:not(:last-child) {
+    margin-bottom: 20px;
+  }
   .ft-widget h5 {
     margin-bottom: 5px;
   }
