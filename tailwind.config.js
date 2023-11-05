@@ -11,9 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#0F2C59",
-        secondary: "#5b86e5",
-        tertiary: "#36d1dc",
+        green: "#1D4F32",
       },
       boxShadow: {
         one: "0px 5px 21px 0 rgba(36, 135, 206, 0.251)",

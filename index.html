@@ -17,13 +17,12 @@
       rel="stylesheet"
     />
     <!-- Plugin Css -->
-    <link rel="stylesheet" href="./src/css/plyr.css" />
     <link rel="stylesheet" href="./src/css/splide.min.css" />
     <!-- Main Css -->
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
 
-  <body class="font-montserrat">
+  <body class="font-montserrat text-black">
     <!-- <div id="preloader"
     class="preloader fixed w-full h-full top-0 end-0 start-0 bottom-0 bg-white z-50 flex items-center justify-center">
     <div class="lds-ellipsis">
@@ -33,28 +32,57 @@
       <div></div>
     </div>
   </div> -->
-
+    <div
+      id="overlay"
+      class="overlay w-screen h-screen fixed top-0 right-0 left-0 bottom-0 bg-[rgb(0,0,0,.25)] z-40 transition duration-300"
+    ></div>
     <div
       class="body-bg absolute w-full h-full top-0 start-0 end-0"
       style="background-image: url(./src/images/body-bg.webp)"
     ></div>
     <header
-      class="py-3 bg-transparent flex items-center justify-center sticky top-0 w-full left-0 right-0 z-20"
+      class="py-2 lg:py-3 bg-transparent flex items-center justify-center w-full z-40 relative"
     >
-      <div class="container">
+      <img
+        class="absolute right-0 -top-2 w-[150px] xl:w-[250px] z-0"
+        src="./src/images/trans-1.png"
+        alt=""
+      />
+      <div class="container z-10">
         <div class="flex items-center justify-between">
           <a href="index.html" class="inline-block"
-            ><img class="w-20" src="./src/images/logo.png" alt=""
+            ><img
+              class="w-14 md:w-16 xl:w-20"
+              src="./src/images/logo.png"
+              alt=""
           /></a>
           <div class="flex items-center justify-end">
-            <ul class="main-menu flex items-center justify-end font-raleway">
-              <li><a href="#">WHY US</a></li>
-              <li><a href="#">PROJECTS</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#" class="btn-outline">CONTACT US</a></li>
-            </ul>
+            <div id="menu" class="menu-wrapper">
+              <button id="close-menu" class="lg:hidden mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-x-lg w-6 h-6"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                  />
+                </svg>
+              </button>
+              <ul
+                class="main-menu block lg:flex items-center justify-end font-raleway"
+              >
+                <li><a href="#">WHY US</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#" class="btn-outline">CONTACT US</a></li>
+              </ul>
+            </div>
 
-            <button></button>
+            <button id="mobile-menu" class="border border-green lg:hidden">
+              <img class="w-8" src="./src/images/menubar.svg" alt="" />
+            </button>
           </div>
         </div>
       </div>
