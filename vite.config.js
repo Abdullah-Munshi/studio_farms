@@ -6,6 +6,9 @@ export default {
         main: resolve(__dirname, "index.html"),
         disclaimer: resolve(__dirname, "disclaimer.html"),
         whyus: resolve(__dirname, "whyus.html"),
+        terms: resolve(__dirname, "terms-use.html"),
+        privacy: resolve(__dirname, "privacy-policy.html"),
+        contact: resolve(__dirname, "contact.html"),
       },
       output: {
         chunkFileNames: "js/[name]-[hash].js",
