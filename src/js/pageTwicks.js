@@ -1,15 +1,4 @@
 function pageTwicks() {
-  // Header background change
-  function changeHeader() {
-    const header = document.querySelector("header");
-    if (window.scrollY > 5) {
-      header.classList.add("change");
-    } else {
-      header.classList.remove("change");
-    }
-  }
-  window.addEventListener("scroll", changeHeader);
-
   if (document.getElementById("mobile-menu") !== null) {
     const mobileBar = document.getElementById("mobile-menu");
     const menu = document.getElementById("menu");
@@ -20,10 +9,13 @@ function pageTwicks() {
       overlay.classList.add("show");
     });
 
-    document.getElementById("close-menu").addEventListener("click", () => {
+    function closeMenu() {
       menu.classList.remove("show");
       overlay.classList.remove("show");
-    });
+    }
+
+    document.getElementById("close-menu").addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
   }
 }
 

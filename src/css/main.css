@@ -16,6 +16,12 @@
   border-radius: 10px;
   padding: 8px 20px;
   display: inline-block;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  background-color: #007076;
+  border-color: #007076;
+  color: #fff;
 }
 .main-menu li:not(:first-child),
 .ft-menu li:not(:first-child) {
@@ -526,7 +532,7 @@
   }
   .main-menu li:not(:first-child) {
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 18px;
   }
   .menu-wrapper {
     position: fixed;
