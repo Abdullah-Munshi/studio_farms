@@ -257,12 +257,39 @@
   visibility: visible;
   bottom: -38px;
 }
+.sec-img img {
+  box-shadow: 20px 20px 11px 0px rgba(0, 0, 0, 0.1);
+}
+.invest-item img {
+  max-height: 80px;
+  margin-bottom: 10px;
+}
+.invest-item h4 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+.invest-item p {
+  color: #363434;
+}
+.tb-content .sec-rw:first-child {
+  padding-top: 0;
+}
+.tb-content .sec-rw:last-child {
+  padding-bottom: 0;
+}
+.tab-area {
+  padding-bottom: 90px;
+}
+/* Media Query */
 @media screen and (max-width: 1300px) {
   .location-area .cmn-content {
     max-width: 430px;
   }
 }
 @media screen and (max-width: 1279px) {
+  .tab-area {
+    padding-bottom: 70px;
+  }
   .main-menu li:not(:first-child),
   .ft-menu li:not(:first-child) {
     margin-left: 50px;
@@ -276,6 +303,19 @@
   }
 }
 @media screen and (max-width: 1023px) {
+  .vision-wrapper h3 {
+    font-size: 28px;
+  }
+  .invest-wrapper {
+    padding-top: 60px;
+  }
+  .tb-content {
+    padding: 45px;
+  }
+  .sec-rw {
+    grid-gap: 45px;
+    padding: 45px 0;
+  }
   .location-wrapper {
     grid-template-columns: auto 230px;
   }
@@ -316,6 +356,45 @@
 }
 
 @media screen and (max-width: 767px) {
+  .tablist li a[aria-selected="true"]::after {
+    bottom: -35px;
+  }
+  .tablist li a {
+    font-size: 18px;
+    padding: 18px 15px;
+  }
+  .tab-area {
+    padding-bottom: 60px;
+  }
+  .tb-content {
+    padding: 20px 16px;
+  }
+  .sec-rw {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-gap: 0;
+    padding: 24px 0;
+  }
+  .sec-rw.reverse {
+    flex-direction: column;
+  }
+  .sec-img {
+    margin-bottom: 24px;
+  }
+  .sec-content h4 {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+  .invest-wrapper {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+  .vision-wrapper h3 {
+    font-size: 24px;
+  }
+  .invest-g-wrapper {
+    grid-template-columns: 1fr;
+  }
   .location-wrapper {
     display: block;
   }
@@ -363,5 +442,11 @@
   .ft-menu li:not(:first-child) {
     margin-left: 0;
     margin-top: 15px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .tablist li a {
+    font-size: 14px;
+    padding: 18px 12px;
   }
 }
