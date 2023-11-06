@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Studio Farms - Why Us</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;400;500;700;800&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Plugin Css -->
+    
+    <!-- Main Css -->
+    
+    <script type="module" crossorigin src="./js/main-93c80333.js"></script>
+    <link rel="stylesheet" href="./css/main-23006f9e.css">
+  </head>
+  <body class="font-montserrat text-black relative">
+    <div
+      id="overlay"
+      class="overlay w-screen h-screen fixed top-0 right-0 left-0 bottom-0 bg-[rgb(0,0,0,.25)] z-40 transition duration-300"
+    ></div>
+    <div
+      class="body-bg absolute w-full h-full top-0 left-0 right-0 bottom-0 -z-0"
+      style="background-image: url(./assets/body-bg-4838a296.webp)"
+    ></div>
+    <header
+      class="py-2 lg:py-3 bg-transparent flex items-center justify-center w-full z-40 relative"
+    >
+      <div class="container z-10">
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="inline-block"
+            ><img
+              class="w-14 md:w-16 xl:w-20"
+              src="./assets/logo-54b954c2.png"
+              alt=""
+          /></a>
+          <div class="flex items-center justify-end">
+            <div id="menu" class="menu-wrapper">
+              <button id="close-menu" class="lg:hidden mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-x-lg w-6 h-6"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                  />
+                </svg>
+              </button>
+              <ul
+                class="main-menu block lg:flex items-center justify-end font-raleway"
+              >
+                <li><a href="whyus.html">WHY US</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li>
+                  <a href="contact.html" class="btn-outline">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+
+            <button id="mobile-menu" class="border border-green lg:hidden">
+              <img class="w-8" src="./assets/menubar-ab990594.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="relative z-0">
+      <section
+        class="hero-area type-2 h-[400px] md:h-[450px] lg:h-[600px] xl:h-[820px] bg-cover bg-center flex flex-col"
+        style="background-image: url(./assets/banner-1-d82e6a92.webp)"
+      >
+        <div class="container mt-auto">
+          <div
+            class="hero-two-content grid grid-cols-3 md:grid-cols-5 gap-y-7 gap-x-4 text-center py-7"
+          >
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3 md:mb-5 xl:mb-6"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="data:image/png;base64,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"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                Amidst Aravalis
+              </p>
+            </div>
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3 md:mb-5 xl:mb-6"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./assets/i-2-5f8296db.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                Resort Style <br />
+                Amenities
+              </p>
+            </div>
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3 md:mb-5 xl:mb-6"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./assets/i-3-72188d77.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                Fresh Produce
+              </p>
+            </div>
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3 md:mb-5 xl:mb-6"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./assets/i-4-ef589b6b.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                Professionally <br />
+                Managed
+              </p>
+            </div>
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./assets/i-5-6850b82f.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                High ROI
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="cmn-area type-2 pt-10 md:pt-12 lg:pt-16 xl:pt-20 pb-8 xl:pb-12 relative overflow-hidden"
+      >
+        <img
+          class="absolute right-0 top-0 w-[120px] xl:w-[200px] z-0"
+          src="./assets/trans-1-14004570.png"
+          alt=""
+        />
+        <img
+          class="absolute left-0 top-1/3 w-[50px] xl:w-[70px] z-0"
+          src="./assets/d-1-ab781bd3.png"
+          alt=""
+        />
+        <img
+          class="absolute right-0 bottom-[20%] w-[50px] xl:w-[60px] z-0"
+          src="./assets/d-2-4be8c6b2.png"
+          alt=""
+        />
+        <div class="container relative z-0">
+          <div class="section-title mb-3 md:mb-5 xl:mb-6">
+            <h2
+              class="font-raleway italic font-bold text-[28px] lg:text-3xl xl:text-4xl text-primary mb-3 inline-block border-b border-primary pb-1"
+            >
+              A chance to renew your ties with nature
+            </h2>
+          </div>
+          <div class="cmn-content">
+            <div class="para">
+              <p>
+                Driven by our passion for all things natural & a constant search
+                for a peaceful oasis of our own, away from the hustle & bustle
+                of the city but close enough to be reached quickly over
+                weekends, is how Vanantram came into being.
+              </p>
+              <p>
+                Strategically located off the Delhi-Mumbai expressway, Vanantram
+                is a 70 minutes quick drive away from Gurgaon.
+              </p>
+            </div>
+          </div>
+
+          <div class="invest-wrapper">
+            <div class="section-title mb-3 md:mb-7 xl:mb-8 text-center">
+              <h2
+                class="font-raleway font-bold text-[24px] lg:text-3xl xl:text-4xl text-black mb-3 inline-block"
+              >
+                Why Invest with StudioFarms
+              </h2>
+            </div>
+            <div class="invest-g-wrapper">
+              <div class="invest-item">
+                <img class="max-w-full" src="./assets/in-1-be915c3b.png" alt="" />
+                <h4 class="font-raleway font-bold text-green">
+                  Peace of Mind:
+                </h4>
+                <p>
+                  Our team of experts indentifies undisputed, & verified land
+                  parcels in high ROI zones. Providing immediate registry, we
+                  take care of all the necessary paper work.
+                </p>
+              </div>
+              <div class="invest-item">
+                <img class="max-w-full" src="./assets/in-2-6accad5f.png" alt="" />
+                <h4 class="font-raleway font-bold text-green">Secure:</h4>
+                <p>
+                  With round the clock CCTV surveillance & manned security,
+                  StudioFarms properties are super safe places to own your next
+                  weekend home.
+                </p>
+              </div>
+              <div class="invest-item">
+                <img class="max-w-full" src="./assets/in-3-783245a7.png" alt="" />
+                <h4 class="font-raleway font-bold text-green">
+                  Customisable Plans:
+                </h4>
+                <p>
+                  Our payment plans & construction plans (optional) are tailor
+                  made & customised to suit your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="vision-wrapper">
+            <h3 class="text-primary italic">
+              Our vision is to provide a refreshing, farm lifestyle by creating
+              a self sustaining & environmentally friendly farm homes, that
+              bring you close to nature.
+            </h3>
+
+            <div class="full-img">
+              <img
+                class="w-full max-w-full"
+                src="./assets/vision-a706d191.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-area relative">
+        <img
+          class="absolute right-0 bottom-[60px] w-[50px] xl:w-[60px] z-0"
+          src="./assets/d-2-4be8c6b2.png"
+          alt=""
+        />
+        <img
+          class="absolute left-0 top-[30%] w-[50px] xl:w-[70px] z-0"
+          src="./assets/d-1-ab781bd3.png"
+          alt=""
+        />
+        <div class="container relative z-0">
+          <div class="tab-box">
+            <ul data-tabs class="bg-primary grid grid-cols-4 tablist">
+              <li><a data-tabby-default href="#overview">Overview</a></li>
+              <li><a href="#location">Location</a></li>
+              <li><a href="#layout">Layout</a></li>
+              <li><a href="#amenities">Amenities</a></li>
+            </ul>
+
+            <div class="tb-content-outer-box">
+              <div id="overview">
+                <div class="tb-content">
+                  <div class="sec-rw">
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Weekend home:
+                      </h4>
+                      <p>
+                        A place of your own where the only sound you hear is of
+                        chirping birds & buzzing crickets. Relax and recharge
+                        with your friends & family.
+                      </p>
+                    </div>
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./assets/img-5-c30a0a4a.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="sec-rw reverse">
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./assets/img-5-c30a0a4a.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Weekend home:
+                      </h4>
+                      <p>
+                        A place of your own where the only sound you hear is of
+                        chirping birds & buzzing crickets. Relax and recharge
+                        with your friends & family.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="location">
+                <div class="tb-content"></div>
+              </div>
+              <div id="layout">
+                <div class="tb-content"></div>
+              </div>
+              <div id="amenities">
+                <div class="tb-content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative z-0">
+      <div class="footer-top bg-white relative pt-12 xl:pt-20 pb-4 xl:pb-12">
+        <img
+          src="./assets/ft-trans-left-8b78382c.png"
+          alt=""
+          class="absolute left-0 w-10 xl:w-16 top-1/4"
+        />
+        <img
+          src="./assets/ft-trans-right-bce39664.png"
+          alt=""
+          class="absolute right-0 w-10 xl:w-16 top-1/4"
+        />
+        <div class="container">
+          <div class="text-center mb-5 xl:mb-8">
+            <h2
+              class="text-black text-2xl md:text-3xl xl:text-4xl font-raleway font-normal border-b border-black inline-block pb-2 xl:pb-3"
+            >
+              Connect With Us
+            </h2>
+          </div>
+          <div class="md:flex justify-around">
+            <div class="ft-widget">
+              <h5>Mail</h5>
+              <a href="mailto:crm@studiofarms.in">crm@studiofarms.in</a>
+            </div>
+            <div class="ft-widget">
+              <h5>Call</h5>
+              <a href="tel:+91 8287337790">+91 8287337790 </a>
+            </div>
+            <div class="ft-widget">
+              <h5>Sales No.</h5>
+              <a href="tel:+91 0000000000">+91 0000000000</a>
+            </div>
+            <div class="ft-widget">
+              <h5>Connect</h5>
+              <ul class="flex items-center justify-center space-x-4">
+                <li>
+                  <a href="" class="inline-block"
+                    ><img
+                      class="w-7 h-7"
+                      src="data:image/png;base64,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"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="" class="inline-block"
+                    ><img class="w-7 h-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAS4SURBVHgB1ZlraBxVFMfPzu66CbtJNqlpLFaMEpFqMI2QIFZDS6iISBUKVrCKzyI+wAeK/aCJ+KEUEVL8pFVQC/rB+kFQEbRNQT8VbGrroxXbBhJaQh5sknbzzvZ3NrvLdHdmdmayU+gfzt4795x773/u48y5d0PiE4lEYq1hGI+FQqGNyF0U3YYk8/pMJnOK5Cw2fy8vL/86OTl5iOcl8YGQF+Ompqb4zMzMM+Fw+AlI3CPekEYOUm8fhI95qeiWZLS2tvYlRmw30iSrRz/ybCqVGnRjXJZkMplsJ/kcaZfKQqd+D0TfI804GTqShOCTJB8jdRIQmP6jzM4Op1E17BQQ7CH5SgIkqIBgJ0k/y6nFzsaSZI5gr1w9NOMFfqmurl5vpSyZbghuI/neui1JMT3zvP1aCQC0fToajXaMjY1Nm8uNIoLNsjLFVg38FIvF1uM+dHe/LwGAl799YWGhr7g8bH6AxNcYtkopwW94w6dHR0cv6vPs7OyRqqoqnYXNUnmi7fD4bW5u7lwJSd3JGLwtpQT/Y/S2ptPpWXN5kERBJyQ/JV2+giQdHiRZY1HhZSqctGopKKIMViPt/k/7f+pzdk3W1dV1y8q3twR8d487NYh/6yX5TiqPXflMfuM8b2e5uLh4ScrjuFQem/CdHZrJk+y2s7wOiANyHuE5CQD4zgezaU1NzX26BuwM2TiddrocQQ0WmiUYbNUfyBp3OFmhf9hB/ZoER1CRDWqMXMBqi1Ams50RS9qo4xIsEvF4/AZdk3c6WWVCoSqSV6x07Pz9EjBw7LcYLm3fxE3VFxdOTU0dZc1+JAGCgYi5JZlkbe61UuB0eyD6rwQIJZlyYwiRF/AEjxSXj4yMXOLM8wDZQQkIBp2PuDY2jM+sYr6JiYlhdF3iQFRH28+I80k+oyPp+uSGJ7ge3/6D1fqE6ND8/Py9ZA9YVO0jSGlF1N15CfPmOJ0OqZ/09HYQbUM05owW64iULvAtf4rsduQkIzeO7KbsdclFNLlvvVuif2T7RAzc4LiYDvYu8SUd6ufQ14GfPntJesqYfaCnSQ3VMuxQnYY28YaN1GslnPpWfMBNmIf7eYc1OZw94/BWW0gOiw8wnQOsxW2snWHxAdb3jyyfhyzaPcUa3qD5rJ9kSDVIGBAfyIf7uUsEP/XP2pQX/HLBmcN8j/hHM3KMUdnb0tISc1uJS69W+n3cQjXIwH2RfygcH5j7f1gj95O9VXyCt9/EDt+JmxqnvRNShmAkEtGpXlesg/gu5VNo16xsaGi4aWlpaYCKa2T1OENn+3Vj0WFhShsbGxOU7dDPrFU/1PmEtfiiuazkcqC+vn4nhgeksphA/kJqaHtDaCWyssIgg9QxPT09Zi4MF1vxlieY9gjZLqkcqpGbkXUQjNjYDCGbiazOFyvCVtYQ7Q/wTG0FJdhld7MWtqulzhbXkubN1Ye6Dek8Q+9/6KPb19WfggX8IQ3cLcGFYfvYSG3lbnzdXkcb+MC3IPwq+Rtl9TjCBnmXDfK7G2NPF/v6jwMB7qNk39AbMC91mdZF6vxM2pf7J8I1PJE0Q50xvq4b2ULHeh3YDgnz1+YCchqdOuXD6A4xra5OAdckLgNROtbJhnwpkQAAAABJRU5ErkJggg==" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ft-widget">
+              <h5>Follow</h5>
+              <ul>
+                <li>
+                  <a href="" class="inline-block"
+                    ><img
+                      class="w-7 h-7"
+                      src="data:image/png;base64,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"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom bg-green py-7">
+        <div class="container">
+          <div class="text-center md:flex items-center justify-between">
+            <ul class="ft-menu md:flex items-center flex-wrap font-raleway">
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-use.html">Terms of use</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="font-raleway text-lg text-white mt-4 md:mt-0">
+              &copy;<strong class="font-bold">2023 Studio Farms</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
