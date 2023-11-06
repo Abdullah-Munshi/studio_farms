@@ -1,4 +1,7 @@
 function pageTwicks() {
+  if (document.getElementById("preloader") !== null) {
+    document.getElementById("preloader").classList.add("hide");
+  }
   if (document.getElementById("mobile-menu") !== null) {
     const mobileBar = document.getElementById("mobile-menu");
     const menu = document.getElementById("menu");
