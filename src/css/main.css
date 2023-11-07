@@ -11,6 +11,12 @@
   transition: 0.3s;
   color: #000;
 }
+.main-menu li a:hover {
+  color: #007076;
+}
+.ft-menu li a:hover {
+  text-decoration: underline;
+}
 .btn-outline {
   border: 1px solid #000;
   border-radius: 10px;
@@ -21,7 +27,7 @@
 .btn-outline:hover {
   background-color: #007076;
   border-color: #007076;
-  color: #fff;
+  color: #fff !important;
 }
 .main-menu li:not(:first-child),
 .ft-menu li:not(:first-child) {
@@ -60,6 +66,26 @@
   background: #1d4f32;
   transform: scale(1);
   z-index: 1;
+}
+
+.dream-g-wrap {
+  padding-top: 105px;
+}
+.circuit-trans {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: calc(100% - 180px);
+}
+.dream-title {
+  box-shadow: 12px 12px 17px 0px rgba(0, 0, 0, 0.4);
+}
+.dream-title h2 {
+  line-height: 1.2;
+}
+.hero-absolute-content p {
+  line-height: 1.2;
 }
 /* preloader css start */
 .lds-ellipsis {
@@ -483,6 +509,9 @@
   }
 }
 @media screen and (max-width: 1023px) {
+  .menu-wrapper .btn-outline {
+    border-color: #007076;
+  }
   .contact-g-wrapper {
     grid-template-columns: 1fr;
   }
@@ -562,6 +591,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .circuit-trans.absolute {
+    display: none;
+  }
+  .dream-g-wrap {
+    padding-top: 0;
+  }
   .two-input {
     display: block;
   }
