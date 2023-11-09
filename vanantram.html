@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Studio Farms - Vanantram</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;400;500;700;800&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="./src/css/splide.min.css" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body class="font-montserrat text-black relative">
+    <div
+      id="overlay"
+      class="overlay w-screen h-screen fixed top-0 right-0 left-0 bottom-0 bg-[rgb(0,0,0,.25)] z-40 transition duration-300"
+    ></div>
+    <div
+      class="body-bg absolute w-full h-full top-0 left-0 right-0 bottom-0 -z-0"
+      style="background-image: url(./src/images/body-bg.webp)"
+    ></div>
+    <header
+      class="py-2 lg:py-3 bg-transparent flex items-center justify-center w-full z-40 relative"
+    >
+      <div class="container z-10">
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="inline-block"
+            ><img
+              class="w-14 md:w-16 xl:w-20"
+              src="./src/images/logo.png"
+              alt=""
+          /></a>
+          <div class="flex items-center justify-end">
+            <div id="menu" class="menu-wrapper">
+              <button id="close-menu" class="lg:hidden mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-x-lg w-6 h-6"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                  />
+                </svg>
+              </button>
+              <ul
+                class="main-menu block lg:flex items-center justify-end font-raleway"
+              >
+                <li><a href="whyus.html" class="uppercase py-1">WHY US</a></li>
+                <li class="relative">
+                  <a href="#" class="uppercase py-1">Vanantram</a>
+                  <ul
+                    class="submenu absolute left-0 bg-white min-w-[200px] max-w-[250px] rounded-md px-4 py-3 !space-y-3 z-[1]"
+                  >
+                    <li class="!m-0">
+                      <a class="!text-[17px]" href="vanantram.html">Layout</a>
+                    </li>
+                    <li class="!m-0">
+                      <a class="!text-[17px]" href="vanantram.html">Location</a>
+                    </li>
+                    <li class="!m-0">
+                      <a class="!text-[17px]" href="vanantram.html"
+                        >Amenities</a
+                      >
+                    </li>
+                    <li class="!m-0">
+                      <a class="!text-[17px]" href="vanantram.html">Overview</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="uppercase py-1">FAQ</a></li>
+                <li>
+                  <a href="contact.html" class="btn-outline uppercase"
+                    >CONTACT US</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <button id="mobile-menu" class="border border-green lg:hidden">
+              <img class="w-8" src="./src/images/menubar.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="relative z-0">
+      <section
+        class="hero-area type-2 h-[400px] md:h-[450px] lg:h-[600px] xl:h-[820px] bg-cover bg-center flex flex-col"
+        style="background-image: url(./src/images/banner-1.webp)"
+      >
+        <div class="container mt-auto">
+          <div
+            class="hero-two-content grid grid-cols-3 md:grid-cols-5 gap-y-7 gap-x-4 text-center py-7"
+          >
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3 md:mb-5 xl:mb-6"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./src/images/i-1.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                Amidst Aravalis
+              </p>
+            </div>
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3 md:mb-5 xl:mb-6"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./src/images/i-2.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                Resort Style <br />
+                Amenities
+              </p>
+            </div>
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3 md:mb-5 xl:mb-6"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./src/images/i-3.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                Fresh Produce
+              </p>
+            </div>
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3 md:mb-5 xl:mb-6"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./src/images/i-4.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                Professionally <br />
+                Managed
+              </p>
+            </div>
+            <div class="item">
+              <div
+                class="item-img h-[60px] xl:h-[80px] flex items-end justify-center mb-3"
+              >
+                <img
+                  class="max-h-full max-w-[60px] xl:max-w-[80px]"
+                  src="./src/images/i-5.png"
+                  alt=""
+                />
+              </div>
+              <p class="font-bold text-white text-sm xl:text-xl leading-snug">
+                High ROI
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-area relative pt-10">
+        <img
+          class="absolute right-0 bottom-[60px] w-[50px] xl:w-[60px] z-0"
+          src="./src/images/d-2.png"
+          alt=""
+        />
+        <img
+          class="absolute left-0 top-[30%] w-[50px] xl:w-[70px] z-0"
+          src="./src/images/d-1.png"
+          alt=""
+        />
+        <div class="container relative z-0">
+          <div class="tab-box">
+            <ul data-tabs class="bg-primary grid grid-cols-4 tablist">
+              <li><a data-tabby-default href="#layout">Layout</a></li>
+              <li><a href="#location">Location</a></li>
+              <li><a href="#amenities">Amenities</a></li>
+              <li><a href="#overview">Overview</a></li>
+            </ul>
+
+            <div class="tb-content-outer-box">
+              <div id="overview">
+                <div class="tb-content">
+                  <div class="sec-rw">
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Weekend home:
+                      </h4>
+                      <p>
+                        A place of your own where the only sound you hear is of
+                        chirping birds & buzzing crickets. Relax and recharge
+                        with your friends & family.
+                      </p>
+                    </div>
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./src/images/img-5.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="sec-rw reverse">
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./src/images/img-5.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Pet Friendly:
+                      </h4>
+                      <p>
+                        Bring your furry friends with you and watch them chase
+                        butterflies & squirrels.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sec-rw">
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Fresh farm produce:
+                      </h4>
+                      <p>
+                        Enjoy fresh vegetables & fruits grown at you very own
+                        farm. We plan to deliver your produce weekly at your
+                        doorstep. So you can literally reap all that you sow.
+                      </p>
+                    </div>
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./src/images/img-5.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="sec-rw reverse">
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./src/images/img-5.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Passive Income:
+                      </h4>
+                      <p>
+                        AirBnb your farm while it’s not in use. A smart way to
+                        earn from your investment.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sec-rw">
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Real Estate Appreciation:
+                      </h4>
+                      <p>
+                        A managed farmhouse is a great opportunity for wealth
+                        creation both in terms of land appreciation & type of
+                        plantation grown there.
+                      </p>
+                    </div>
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./src/images/img-5.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="location">
+                <div class="tb-content location">
+                  <div class="location-fea relative">
+                    <img
+                      src="./src/images/pin.png"
+                      alt=""
+                      class="pin absolute"
+                    />
+                    <div class="lk-fea-single bg-[#2CACB7]">
+                      <div class="fea-icon">
+                        <img
+                          class="max-w-full"
+                          src="./src/images/q-1.png"
+                          alt=""
+                        />
+                      </div>
+                      <p>
+                        Excellent connectivity from entire Delhi NCR makes it an
+                        ideal weekend home.
+                      </p>
+                    </div>
+                    <div class="lk-fea-single bg-[#97165A]">
+                      <div class="fea-icon">
+                        <img
+                          class="max-w-full"
+                          src="./src/images/q-2.png"
+                          alt=""
+                        />
+                      </div>
+                      <p>90 minutes pleasure Drive from Gurgaon.</p>
+                    </div>
+                    <div class="lk-fea-single bg-[#5A185A] middle">
+                      <div class="fea-icon">
+                        <img
+                          class="max-w-full"
+                          src="./src/images/q-3.png"
+                          alt=""
+                        />
+                      </div>
+                      <p>
+                        Travel Time will reduce to 70 minutes once the planned
+                        Delhi Mumbai Burja Interchange is ready. (Work is
+                        already underway).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="location-wrapper plc-2">
+                    <div class="location-map">
+                      <img
+                        class="max-w-full"
+                        src="./src/images/location.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="lk-2">
+                      <img
+                        class="max-w-full"
+                        src="./src/images/location-2.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="layout">
+                <div class="tb-content layout">
+                  <div class="phase-wrapper">
+                    <div class="phase-blk">
+                      <div class="blk-single">
+                        <h4>Phase-1</h4>
+                      </div>
+                      <div class="blk-single">
+                        <p>
+                          <strong class="block mb-1">28</strong> Acres in Phase
+                          1
+                        </p>
+                      </div>
+                      <div class="blk-single">
+                        <p>
+                          <strong class="block mb-1">65</strong> Freehold
+                          farmhouses
+                        </p>
+                      </div>
+                      <div class="blk-single">
+                        <p>
+                          <strong class="block mb-1">1250</strong>Sq yards
+                          onwards
+                        </p>
+                      </div>
+                      <div class="blk-single">
+                        <p>
+                          Circular Layout enables easy accessibility of common
+                          areas
+                        </p>
+                      </div>
+                    </div>
+                    <div class="full-img">
+                      <img
+                        class="max-w-full image-shadow"
+                        src="./src/images/phase.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="masterplan-wrapper">
+                    <div class="section-title mb-3 md:mb-5 xl:mb-6">
+                      <h2
+                        class="font-raleway font-bold text-[28px] lg:text-3xl xl:text-4xl text-primary mb-3 inline-block border-b border-primary pb-1"
+                      >
+                        Masterplan
+                      </h2>
+                    </div>
+                    <div class="full-img">
+                      <img
+                        class="max-w-full"
+                        src="./src/images/masterplan.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="amenities">
+                <div class="tb-content amenities">
+                  <div class="sec-rw">
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Design
+                      </h4>
+                      <p>
+                        Keeping a sustainable outlook in mind, our focus is
+                        primarily on using building materials that are locally
+                        available & suit local climatic conditions.
+                      </p>
+                    </div>
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./src/images/am-1.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="sec-rw reverse">
+                    <div class="sec-img">
+                      <img
+                        class="w-full max-w-full"
+                        src="./src/images/am-1.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="sec-content cmn-content">
+                      <h4
+                        class="font-raleway font-bold text-[24px] text-primary mb-5 inline-block border-b border-primary"
+                      >
+                        Security
+                      </h4>
+                      <p>
+                        The perimeter of the estate has a stone boundary
+                        demarcation along with barbed wire fencing.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="amenites-outer-box">
+                    <div class="am-lf">
+                      <div class="full-img">
+                        <img
+                          class="max-w-full w-full image-shadow"
+                          src="./src/images/qq-1.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="full-img">
+                        <img
+                          class="max-w-full w-full image-shadow"
+                          src="./src/images/qq-1.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="full-img">
+                        <img
+                          class="max-w-full w-full image-shadow"
+                          src="./src/images/qq-2.webp"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="am-lr-g">
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-1.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Restaurant</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-2.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Party Lawns</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-3.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Cricket Pitch</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-4.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Badminton</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-5.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Basket Ball</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-6.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Meditation Zone</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-7.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Kids Play Area</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-8.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Swimming Pool</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-9.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>Volley ball</p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-10.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>
+                          Common <br />
+                          Gazebos <br />
+                          & green sit outs
+                        </p>
+                      </div>
+                      <div class="am-item">
+                        <div class="am-icon">
+                          <img
+                            class="max-w-full"
+                            src="./src/images/aa-11.png"
+                            alt=""
+                          />
+                        </div>
+                        <p>
+                          Indoor Games like <br />
+                          Pool, Foos Ball, <br />
+                          Table Tennis etc.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="plantation-wrap">
+                    <div class="section-title mb-3 md:mb-5 xl:mb-6">
+                      <h2
+                        class="font-raleway font-bold text-[28px] lg:text-3xl xl:text-4xl text-primary mb-3 inline-block border-b border-primary pb-1"
+                      >
+                        Plantation
+                      </h2>
+                    </div>
+                    <div class="full-img">
+                      <img
+                        class="max-w-full"
+                        src="./src/images/plantation.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative z-0">
+      <div class="footer-top bg-white relative pt-12 xl:pt-20 pb-4 xl:pb-12">
+        <img
+          src="./src/images/ft-trans-left.png"
+          alt=""
+          class="absolute left-0 w-10 xl:w-16 top-1/4"
+        />
+        <img
+          src="./src/images/ft-trans-right.png"
+          alt=""
+          class="absolute right-0 w-10 xl:w-16 top-1/4"
+        />
+        <div class="container">
+          <div class="text-center mb-5 xl:mb-8">
+            <h2
+              class="text-black text-2xl md:text-3xl xl:text-4xl font-raleway font-normal border-b border-black inline-block pb-2 xl:pb-3"
+            >
+              Connect With Us
+            </h2>
+          </div>
+          <div class="md:flex justify-around">
+            <div class="ft-widget">
+              <h5>Mail</h5>
+              <a href="mailto:crm@studiofarms.in">crm@studiofarms.in</a>
+            </div>
+            <div class="ft-widget">
+              <h5>Call</h5>
+              <a href="tel:+91 8287337790">+91 8287337790 </a>
+            </div>
+            <div class="ft-widget">
+              <h5>Sales No.</h5>
+              <a href="tel:+91 0000000000">+91 0000000000</a>
+            </div>
+            <div class="ft-widget">
+              <h5>Connect</h5>
+              <ul class="flex items-center justify-center space-x-4">
+                <li>
+                  <a href="" class="inline-block"
+                    ><img
+                      class="w-7 h-7"
+                      src="./src/images/whatsapp.png"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="" class="inline-block"
+                    ><img class="w-7 h-7" src="./src/images/call.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ft-widget">
+              <h5>Follow</h5>
+              <ul>
+                <li>
+                  <a href="" class="inline-block"
+                    ><img
+                      class="w-7 h-7"
+                      src="./src/images/instagram.png"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom bg-green py-7">
+        <div class="container">
+          <div class="text-center md:flex items-center justify-between">
+            <ul class="ft-menu md:flex items-center flex-wrap font-raleway">
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-use.html">Terms of use</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="font-raleway text-lg text-white mt-4 md:mt-0">
+              &copy;<strong class="font-bold">2023 Studio Farms</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
