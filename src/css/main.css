@@ -12,7 +12,7 @@
   color: #000;
 }
 .main-menu li a:hover,
-.main-menu li.active a {
+.main-menu li.active > a {
   color: #007076;
 }
 .ft-menu li a:hover {
@@ -526,6 +526,9 @@
   }
 }
 @media screen and (max-width: 1023px) {
+  .main-menu li ul.submenu {
+    background-color: #ddd;
+  }
   .menu-wrapper .btn-outline {
     border-color: #007076;
   }
