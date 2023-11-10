@@ -611,6 +611,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .lk-2 {
+    width: 200px;
+  }
   .circuit-trans.absolute {
     display: none;
   }
