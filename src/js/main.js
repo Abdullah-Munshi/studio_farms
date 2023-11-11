@@ -7,7 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
     setupSlider();
   }
 
+  let tabs;
   if (document.querySelector("[data-tabs]") !== null) {
-    let tabs = new Tabby("[data-tabs]");
+    tabs = new Tabby("[data-tabs]");
+  }
+
+  var urlParams = new URLSearchParams(window.location.search);
+  var activeTab = urlParams.get("tab");
+  if (activeTab) {
+    tabs.toggle(activeTab);
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 0);
   }
 });

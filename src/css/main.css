@@ -278,6 +278,7 @@
   text-align: center;
   padding: 20px;
   transition: 0.3s;
+  outline: none !important;
 }
 .tablist li a:hover {
   background-color: #1d4f32;
